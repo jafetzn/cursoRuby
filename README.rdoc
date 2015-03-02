@@ -1,6 +1,7 @@
 == README
 
-Ejemplo de desarrollo de un proyecto en Ruby on Rails
+Ejemplo de desarrollo de un proyecto en Ruby on Rails.
+Aztualización.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
