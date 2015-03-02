@@ -10,7 +10,7 @@ group :development, :test do
 	
 end
 
-group :production, do
+group :production do
 	gem 'sqlite3'
 end
 # Use SCSS for stylesheets
