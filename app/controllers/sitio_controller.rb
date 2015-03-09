@@ -1,4 +1,4 @@
 class SitioController < ApplicationController
-  def index
+  def inicio
   end
 end

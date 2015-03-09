@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class SitioControllerTest < ActionController::TestCase
-  test "should get index" do
-    get :index
+  test "should get inicio" do
+    get :inicio
     assert_response :success
   end
 
