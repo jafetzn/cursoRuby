@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
   #get 'sitio/inicio'
-
-  get 'sitio/index'
+  #get 'sitio/index'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root to: 'sitio#index'
+   root to: 'sitio#inicio'
   # root 'welcome#index'
+
+  get 'acerca' => 'sitio#acerca'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

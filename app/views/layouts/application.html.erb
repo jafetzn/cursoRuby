@@ -8,7 +8,14 @@
 </head>
 <body>
 
-<%= yield %>
+<small><%= link_to "Home", root_path%></small>
+<small><%= link_to "About", acerca_path%></small>
+
+<div class="container-fluid">
+	<%= yield %>
+
+	<%= render "layouts/footer"%>
+</div>
 
 </body>
 </html>
