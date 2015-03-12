@@ -1,15 +1,90 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>CursoRails</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+<html lang="en" class="no-js">
+	<head>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1"> 
+		<title>Codebots.net</title>
+		<meta name="description" content="Website to show a few tutorials about web programming and learn the new stuff in this world." />
+		<meta name="keywords" content="codebots.net, codebots, net, rubinmz, programming, ruby, css3 java, html5, javascript, jquery, rubyonrails" />
+		<meta name="author" content="Codebots" />
+		<link rel="shortcut icon" href="../favicon.ico">	
+	</head>
 <body>
 
-<small><%= link_to "Home", root_path%></small>
-<small><%= link_to "About", acerca_path%></small>
+<header>
+			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+
+						<a class="navbar-brand" href="#">
+							<%= image_tag "duscae.png", :alt => "Codebots.net", :title => "Codebots.net", :style => "width:70px;padding-top:0; margin-top:-15px;" %>
+					    </a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+							<span class="sr-only">Menu</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand">Duscae <small>Project</small></a>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="navbar-1">
+						<ul class="nav navbar-nav">
+
+
+
+							<li class="active"><%= link_to "Home", root_path%></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+									Tutoriales <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Ruby</a></li>
+									<li><a href="#">Java</a></li>
+									<li class="divider"><a href="#"></a></li>
+									<li><a href="#">HTML</a></li>
+									<li><a href="#">CSS</a></li>
+									<li><a href="#">Javascript</a></li>
+								</ul>
+							</li>
+							<li><%= link_to "Acerca", acerca_path%></li>
+							<li><a href="#">Descargas</a></li>
+							<li><a href="#">Foro</a></li>
+						</ul>
+						
+						<form action="" class="navbar-form pull-left hidden-xs hidden-sm" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Buscar" />
+							</div>
+						</form>
+
+						<form action="" class="navbar-form navbar-left visible-xs" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Buscar" />
+							</div>
+						</form>
+
+						
+						<ul class="nav navbar-nav navbar-right pull-right hidden-xs">
+							<li><a href="#">Log in</a></li>							
+							<li><a href="#">Sign up</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right visible-xs">
+							<li><a href="#">Log in</a></li>							
+							<li><a href="#">Sign up</a></li>
+						</ul>
+
+					</div>
+			</nav>	
+			
+		</header>
+
+
 
 <div class="container-fluid">
 	<%= yield %>
