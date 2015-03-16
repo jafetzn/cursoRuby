@@ -1,5 +1,16 @@
-<footer style="margin-top: 80px;">
+<footer style="margin-top: 80px;" class="row">
 			<div class="container-fluid padd">
+				<div class="row">
+					<section class="col-xs-12 col-sm-6 col-md-4">						
+						<h3 style="text-align:center;"><i class="fa fa-flag"></i> Etiquetas</h3>
+					</section>
+					<section class="hidden-xs col-xs-12 col-sm-6 col-md-4">						
+						<h3 style="text-align:center;"><i class="fa fa-code"></i> Proyectos</h3>
+					</section>
+					<section class="hidden-xs hidden-sm col-md-4">						
+						<h3 style="text-align:center;"><i class="fa fa-th-large"></i> Social</h3>
+					</section>
+				</div>
 				<div class="row">
 					<script>
 						$(document).ready(function(){
@@ -9,6 +20,7 @@
 							});
 						});	
 					</script>
+
 				<section id="categorias" class="row col-xs-12 col-sm-6 col-md-4">						
 							<ul class="visible-lg-inline-block visible-md-inline-block visible-sm-inline-block visible-xs-inline-block">
 		    					<li><a class="fsNon" href="#">Node.js</a></li>
@@ -45,20 +57,86 @@
 			    			</ul>
 					</section>
 
-					<section class="row col-xs-12 col-sm-6 col-md-4">
-						<h4>Proyectos realizados</h4>
-						<h3>imágenes en círculo</h3>
+					<section id="last-projects" class="hidden-xs row col-xs-12 col-sm-6 col-md-4">
+						<ul>
+							<div class="row">
+								<div class="col-md-4">
+									<li><%= image_tag "kciaad.png", :alt => "chahci", :title => "chahci", :class => "img-square img-responsive" %></li>
+								</div>
+								<div class="col-md-4">
+									<li><%= image_tag "kj.png", :alt => "chahci", :title => "chahci", :class => "img-square img-responsive" %></li>
+								</div>
+								<div class="col-md-4">
+									<li><%= image_tag "mgsv.png", :alt => "chahci", :title => "chahci", :class => "img-square img-responsive" %></li>
+								</div>
+							</div>
+						</ul>
+						<ul>
+							<li><%= image_tag "rpFox.png", :alt => "chahci", :title => "chahci", :class => "img-square img-responsive" %></li>
+							<li><%= image_tag "snkx.png", :alt => "chahci", :title => "chahci", :class => "img-square img-responsive" %></li>
+							<li><%= image_tag "gta.png", :alt => "chahci", :title => "chahci", :class => "img-square img-responsive" %></li>
+						</ul>
 					</section>
 
-					<section class="row col-xs-12 col-sm-12 col-md-4">
-						<h4>Referencias</h4>
-						<h3>O algo así...</h3>
+					<section class="hidden-xs hidden-sm row col-xs-12 col-sm-12 col-md-4">
+					<div class="btn-toolbar">
+						<div class="btn-group btn-group-sm">
+							<button class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span></button>
+							<button class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+							<button class="btn btn-default"><span class="glyphicon glyphicon-share-alt"></span></button>
+							<button class="btn btn-default"><span class="glyphicon glyphicon-home"></span></button>
+						</div>
+					</div>
+					<div class="btn-toolbar">
+						<div class="btn-group">
+							<button class="btn btn-social-icon btn-twitter">
+							    <i class="fa fa-twitter"></i>
+							  </button>
+							<button class="btn btn-default">2</button>
+							<button class="btn btn-default">3</button>
+							<button class="btn btn-default">3</button>
+						</div>
+					</div>
 					</section>
 				</div>
 
-				<div class="row container-fluid">
-					<section class="row col-xs-12 col-sm-6 col-md-12">
-						<h4>@RubinMz <small>- Codebots.net</small></h4>
+				<div class="row visible-xs">
+					<section class="col-md-12">						
+						<h3 style="text-align:center;"><i class="fa fa-flag"></i> Proyectos</h3>
+					</section>
+				</div>
+
+				<div class="row">
+					<section class="visible-xs row col-xs-12 col-sm-6 col-md-4">
+						<ul>
+							<li><%= image_tag "metalgear.png", :alt => "chahci", :title => "chahci", :class => "img-circle img-responsive" %></li>
+							<li><%= image_tag "metalgear.png", :alt => "chahci", :title => "chahci", :class => "img-circle img-responsive" %></li>
+							<li><%= image_tag "metalgear.png", :alt => "chahci", :title => "chahci", :class => "img-circle img-responsive" %></li>
+						</ul>
+					</section>
+				</div>
+
+				<div class="row visible-xs visible-sm">
+					<section class="col-md-12">						
+						<h3 style="text-align:center;"><i class="fa fa-flag"></i> Social Network</h3>
+					</section>
+				</div>
+
+				<div class="row container-fluid blk-footer">
+					<section class="row col-xs-6 col-sm-7 col-md-9">
+						<h4>@RubinMz_ <small>- Codebots.net</small></h4>
+					</section>
+					<section class="row col-xs-6 col-sm-5 col-md-3">
+					<ul class="pull-right social-footer">
+        				<li><a href="http://facebook.com/codebots.net" target="blank"><i class='fa fa-facebook'></i></a></li>
+        				<li><a href="http://twitter.com/RubinMz_" target="blank"><i class="fa fa-twitter"></i></a></li>
+        				<li><a href="https://plus.google.com/u/0/117961280002960161413/posts" target="blank"><i class="fa fa-google-plus"></i></a></li>
+        				<li><a href="https://instagram.com/rubinmz_/" target="blank"><i class="fa fa-instagram"></i></a></li>
+        				<li><a href="https://www.tumblr.com/blog/rubinmz" target="blank"><i class="fa fa-tumblr"></i></a></li>
+        				<li><a href="https://www.youtube.com/channel/UCHRFygUalRp-uwyBhLJkJDg" target="blank"><i class="fa fa-youtube"></i></a></li>
+        				<li><a href="https://github.com/rubinmz" target="blank"><i class="fa fa-github"></i></a></li>
+        				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        			</ul>
 					</section>
 				</div>
 			</div>

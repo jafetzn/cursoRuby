@@ -11,9 +11,18 @@
 		<meta name="description" content="Website to show a few tutorials about web programming and learn the new stuff in this world." />
 		<meta name="keywords" content="codebots.net, codebots, net, rubinmz, programming, ruby, css3 java, html5, javascript, jquery, rubyonrails" />
 		<meta name="author" content="Codebots" />
-		<link rel="shortcut icon" href="../favicon.ico">	
+		<%= favicon_link_tag 'rubyicon.ico' %>
 	</head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+</script>
 
 <header>
 			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
@@ -70,13 +79,21 @@
 
 						
 						<ul class="nav navbar-nav navbar-right pull-right hidden-xs">
-							<li><a href="#">Log in</a></li>							
-							<li><a href="#">Sign up</a></li>
+								<li>
+									<%= link_to login_path do %>
+										<i class="fa fa-sign-in"></i> Login
+									<% end %> 
+								</li>					
+							<li><a href="#">Registro</a></li>
 						</ul>
 
 						<ul class="nav navbar-nav navbar-right visible-xs">
-							<li><a href="#">Log in</a></li>							
-							<li><a href="#">Sign up</a></li>
+							<li>
+									<%= link_to login_path do %>
+										<i class="fa fa-sign-in"></i> Login
+									<% end %> 
+								</li>								
+							<li><a href="#">Registro</a></li>
 						</ul>
 
 					</div>
@@ -87,8 +104,10 @@
 
 
 <div class="container-fluid">
+	
 	<%= yield %>
 
+	
 	<%= render "layouts/footer"%>
 </div>
 

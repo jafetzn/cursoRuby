@@ -139,9 +139,33 @@ footer #categorias a:hover{
           transition: all .4s ease-in-out;
 }
 
+footer #last-projects li{
+	list-style-type: none;
+	display: inline-block;
+}
+footer #last-projects li img{
+	width: 100px;
+	padding: 5px;
+}
 
 .padd{
   padding-top: 20px;
+}
+
+.blk-footer{
+	background: #101010;
+}
+footer .social-footer li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px;
+}
+
+.blk{
+	background: #101010;	
+}
+.panel-info > .panel-heading{
+	background: #060606;
 }
 /*
 .carousel-inner {

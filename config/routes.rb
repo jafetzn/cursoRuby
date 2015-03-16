@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  #get 'sitio/inicio'
+  get 'login/login'
+  get 'sitio/inicio'
   #get 'sitio/index'
   
 
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   get 'acerca' => 'sitio#acerca'
+  get 'login' => 'login#login'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
