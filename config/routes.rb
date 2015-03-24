@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'login/login'
   get 'sitio/inicio'
   #get 'sitio/index'

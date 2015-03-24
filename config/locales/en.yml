@@ -21,3 +21,29 @@
 
 en:
   hello: "Hello world"
+  errors:
+        template: 
+            body: There were problems with the following fields
+            header: 
+                one: 1 error prohibited this {{model}} from being saved
+                other: "{{count}} errors prohibited this {{model}} from being saved"  
+        messages:
+            inclusion: "is not included in the list"
+            exclusion: "is reserved"
+            invalid: "is invalid"
+            confirmation: "doesn't match confirmation"
+            accepted: "must be accepted"
+            empty: "Campo no puede estar vacío"
+            blank: "Campo obligatorio"
+            too_long: "El Campo es demasiado largo (el máximo son {{count}} caracteres)"
+            too_short: "El Campo es demasiado corto(el mínimo son {{count}} caracteres)"
+            wrong_length: "is the wrong length (should be {{count}} caracteres)"
+            taken: "has already been taken"
+            not_a_number: "No es un número"
+            greater_than: "Debe de ser mayor a {{count}}"
+            greater_than_or_equal_to: "must be greater than or equal to {{count}}"
+            equal_to: "must be equal to {{count}}"
+            less_than: "must be less than {{count}}"
+            less_than_or_equal_to: "must be less than or equal to {{count}}"
+            odd: "must be odd"
+            even: "must be even"
