@@ -223,3 +223,34 @@ footer .social-footer li{
           transition: all .4s ease-in-out;
 }
 */
+
+
+
+
+
+
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+  
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+  
+}
+
+
+@media (max-width: 480px) { 
+  #myCarousel{
+    margin-top: 30px;
+  }
+  #myCarousel p{
+    font-size: 1px;
+  }
+  #myCarousel h1 span{
+    font-size: 100px;
+  }
+
+
+}

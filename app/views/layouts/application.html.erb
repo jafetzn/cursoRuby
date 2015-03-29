@@ -12,6 +12,13 @@
 		<meta name="keywords" content="codebots.net, codebots, net, rubinmz, programming, ruby, css3 java, html5, javascript, jquery, rubyonrails" />
 		<meta name="author" content="Codebots" />
 		<%= favicon_link_tag 'rubyicon.ico' %>
+		<!-- custom scrollbar stylesheet -->
+	<!--link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"-->
+	
+	<!-- demo CSS -->
+	<style>
+		html, body{ height: 100%; }
+	</style>
 	</head>
 <body>
 <div id="fb-root"></div>
@@ -141,6 +148,21 @@
 	
 	<%= render "layouts/footer"%>
 </div>
+	
+
+<!-- custom scrollbar plugin -->
+
+
+			<script>
+			(function($){
+				$(window).load(function(){					
+					$("body").mCustomScrollbar({
+						theme:"light-thick"
+					});
+					
+				});
+			})(jQuery);
+		</script>
 
 </body>
 </html>
