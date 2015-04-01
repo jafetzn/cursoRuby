@@ -1,0 +1,6 @@
+<tr>
+	<td><%= pin.description %></td>
+	<td><%= link_to 'Mostrar', pin %></td>
+	<td><%= link_to 'Editar', edit_pin_path(pin) %></td>
+	<td><%= link_to 'Eliminar', pin, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
+</tr>
