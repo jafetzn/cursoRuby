@@ -1,4 +1,5 @@
 class PinsController < ApplicationController
+  before_filter :authenticate_user!, except: [:index] #Filtro que valida si esta autenticado
   before_action :set_pin, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
@@ -13,7 +14,7 @@ class PinsController < ApplicationController
   end
 
   def new
-    @pin = Pin.new
+    @pin = current_user.pins.new
     respond_with(@pin)
   end
 
@@ -21,7 +22,7 @@ class PinsController < ApplicationController
   end
 
   def create
-    @pin = Pin.new(pin_params)
+    @pin = current_user.pins.new(pin_params)
     @pin.save
     respond_with(@pin)
   end
@@ -38,7 +39,7 @@ class PinsController < ApplicationController
 
   private
     def set_pin
-      @pin = Pin.find(params[:id])
+      @pin = current_user.pins.find(params[:id])
     end
 
     def pin_params

@@ -1045,7 +1045,7 @@ yx-axis
 	/* theme: "minimal-dark" */
 	
 	.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-		background-color: #000; background-color: rgba(0,0,0,0.2);
+		background-color: #000; background-color: rgba(77,169,255,0.2);
 		filter: "alpha(opacity=20)"; -ms-filter: "alpha(opacity=20)"; 
 	}
 	

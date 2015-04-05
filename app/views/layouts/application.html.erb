@@ -146,22 +146,20 @@
 	<%= yield %>
 
 	
-	<%= render "layouts/footer"%>
 </div>
+	<%= render "layouts/footer"%>
 	
 
 <!-- custom scrollbar plugin -->
-
-
 			<script>
 			(function($){
-				$(window).load(function(){					
+				$(window).ready(function(){					
 					$("body").mCustomScrollbar({
-						theme:"light-thick"
+						theme:"minimal-dark"
 					});
-					
 				});
-			})(jQuery);
+			})
+			(jQuery);
 		</script>
 
 </body>

@@ -1,6 +1,10 @@
 <div class="row span6 offset3 well">
   <strong>Descripción:</strong>
   <%= @pin.description %>
+  <%= @pin.created_at %>
+  <code>Creado por 
+  	<%= @pin.user.name %>
+  </code>
 </div>
 
 <div class="row span9 ">

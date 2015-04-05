@@ -7,7 +7,6 @@
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-
   src: url('/assets/glyphicons-halflings-regular.eot');
   src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
   url('/assets/glyphicons-halflings-regular.woff2') format('woff2'), 
@@ -143,7 +142,7 @@ footer{
 }
 
 footer{
-	background: url("/assets/bkg/jq-noise1.png") repeat scroll 0 0 #000;
+	/*background: url("/assets/bkg/jq-noise1.png") repeat scroll 0 0 #000;*/
 	box-shadow: 0 -1px 1px #101010;
 	padding: 10px;
 	overflow: hidden;
@@ -192,7 +191,8 @@ footer #last-projects li img{
 }
 
 .blk-footer{
-	background: #000;
+	background: #0E0E10;
+  padding-top: 10px;
 }
 footer .social-footer li{
 	display: inline-block;
@@ -224,6 +224,11 @@ footer .social-footer li{
           transition: all .4s ease-in-out;
 }
 */
+
+.well{
+	background: #000;
+	margin-top: 10px;
+}
 
 
 
