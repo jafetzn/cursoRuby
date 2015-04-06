@@ -28,9 +28,9 @@ en:
                 one: 1 error prohibited this {{model}} from being saved
                 other: "{{count}} errors prohibited this {{model}} from being saved"  
         messages:
-            inclusion: "is not included in the list"
+            inclusion: "No está inculido el valor en la lista"
             exclusion: "is reserved"
-            invalid: "is invalid"
+            invalid: "El valor es inválido"
             confirmation: "doesn't match confirmation"
             accepted: "must be accepted"
             empty: "Campo no puede estar vacío"

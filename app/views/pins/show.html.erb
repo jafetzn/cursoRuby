@@ -8,6 +8,8 @@
 </div>
 
 <div class="row span9 ">
+<% if current_user == @pin.user %>
 	<%= link_to 'Editar', edit_pin_path(@pin) %> |
+<% end %>
 	<%= link_to 'Regresar', pins_path %>
 </div>
