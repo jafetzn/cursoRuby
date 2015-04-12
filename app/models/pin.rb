@@ -1,8 +1,15 @@
 class Pin < ActiveRecord::Base
+	has_attached_file :image
 	validates :description, presence: true
-	belongs_to :user
+	validates_attachment :image, presence: true,
+						content_type: { content_type: ["image/jpeg", "image/jpg", "image/png", "image/gif"]},
+						size: { less_than: 5.megabytes }
 
+
+	belongs_to :user
 	#actualizacion oja.la
-	attr_accessible :user_id, :description
+	attr_accessible :user_id, :description, :image
+
+	
 end
 

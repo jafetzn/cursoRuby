@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :pins
 
   devise_for :users
-  get 'login/login'
+  #get 'login/login'
   get 'sitio/inicio'
   #get 'sitio/index'
   

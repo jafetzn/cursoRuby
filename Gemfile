@@ -11,7 +11,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
 gem 'protected_attributes'
-
+gem "paperclip", "~> 4.2"
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'sqlite3'
