@@ -49,7 +49,7 @@ body{
   /*background: #171E29; 1F2D42 #0d0d0d*/
   /*background: #19181a;*/
   background: url("/assets/bkg/Free-Professional-Dark-Carbon-Patterns.jpg") repeat;
-  
+  //overflow-x: hidden;
   /*color: #232E3F;*/
   color: #fff;
   padding-top: 80px; 
@@ -261,6 +261,35 @@ footer .social-footer li{
   font-family: 'Tittle-Post';
 }
 
+
+.box{
+  margin: 5px;
+  padding: 5px;
+  font-size: 11pt;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 5px;
+  box-shadow: 1px 1px 10px #444;
+  width: 300px;
+  background: #0E0E10;
+}
+
+.box img{
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 5px;
+}
+
+.box h3{
+  font-family: 'Tittle-Post';
+}
+
+.descripcion{
+  margin: 10px 0 5px;
+}
 
  
 /* Portrait tablet to landscape and desktop */
