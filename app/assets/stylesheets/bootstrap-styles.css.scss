@@ -1,8 +1,12 @@
 @import 'bootstrap';
 
 @font-face {
-	font-family:'Fuente1';
-	src: url('/assets/Oklahoma.ttf');
+  font-family:'Fuente1';
+  src: url('/assets/Oklahoma.ttf');
+}
+@font-face {
+	font-family:'Tittle-Post';
+	src: url('/assets/CaviarDreams.ttf');
 }
 
 @font-face {
@@ -249,7 +253,13 @@ footer .social-footer li{
   border: 1px solid #6C8F51;
 }
 
-
+.image-post{
+  width: 700px;
+}
+.post-title{
+  color: #2FF7A3;
+  font-family: 'Tittle-Post';
+}
 
 
  

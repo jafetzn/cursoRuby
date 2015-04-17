@@ -1,10 +1,31 @@
 <div class="row span6 offset3 well">
-  <strong>Descripción:</strong>
-  <%= @pin.description %>
-  <%= @pin.created_at %>
+	<% if @pin.image? %>
+	<div class="col-md-6">
+		<%= image_tag @pin.image , :class=> "image-post img-responsive" %>		
+	</div>
+	<div class="col-md-6">
+		<strong>Título:</strong>
+  		<h2 class="post-title"><%= @pin.description %></h2>
+	</div>
+  
+  <p>Fecha de creación:</p>
+  <%= @pin.created_at %><br/>
   <code>Creado por 
   	<%= @pin.user.name %>
   </code>
+  <% else %>
+  	<div class="col-md-12">
+		<strong>Título:</strong>
+  		<h2 class="post-title"><%= @pin.description %></h2>
+	</div>
+  
+  <p>Fecha de creación:</p>
+  <%= @pin.created_at %><br/>
+  <code>Creado por 
+  	<%= @pin.user.name %>
+  </code>
+  <% end %>
+
 </div>
 
 <div class="row span9 ">
