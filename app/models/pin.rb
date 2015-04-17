@@ -7,7 +7,7 @@ class Pin < ActiveRecord::Base
 
 
 	belongs_to :user
-	#actualizacion oja.la
+	#actualizacion oja.la 
 	attr_accessible :user_id, :description, :image
 
 	
