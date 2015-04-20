@@ -22,3 +22,6 @@ doc/
 
 #ignorando las imagenes cargadas en pruebas
 /public/system
+
+#ignorando la capeta de las imagenes para poblar la base de pins
+/img4posts

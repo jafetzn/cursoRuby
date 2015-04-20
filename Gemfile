@@ -12,6 +12,10 @@ gem 'devise'
 gem 'simple_form'
 gem 'protected_attributes'
 gem 'paperclip', '~> 3.0'
+gem 'faker'
+gem 'will_paginate', '~> 3.0'
+gem 'bootstrap-will_paginate'
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'sqlite3'

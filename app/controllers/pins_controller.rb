@@ -5,7 +5,7 @@ class PinsController < ApplicationController
   respond_to :html
 
   def index
-    @pins = Pin.order("created_at desc")
+    @pins = Pin.order("created_at desc").page(params[:page]).per_page(10);
     respond_with(@pins)
   end
 
