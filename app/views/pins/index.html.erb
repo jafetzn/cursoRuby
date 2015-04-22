@@ -1,13 +1,21 @@
-<h4><%= link_to 'Nuevo Recurso', new_pin_path %></h4>
-<p><%= will_paginate @pins %></p>
-<br/>
 <div class="row">
-			<section class="col-xs-12 col-sm-8 col-md-8">
-    			<%= render @pins %>
-			</section>
-			<section class="col-xs-12 col-sm-4 col-md-4">
-			<%= render "layouts/aside" %>
-			</section>
+		<div class="container-fluid">			 
+			 <%= link_to new_pin_path do %>
+				<h4><i class="fa fa-plus-circle"></i> Nuevo Recurso</h4>
+  			 <% end %> 
+
+			<p><%= will_paginate @pins %></p>
+			<section class="row col-xs-offset-2 col-md-offset-0 col-sm-offset-0 col-xs-8 col-sm-12 col-md-8">
+				<br/>
+
+				<div class="row">
+					<section class="col-xs-12 col-sm-12 col-md-12">
+					   	<%= render @pins %>
+					</section>
+				</div>
+				<br/>
+
+			</section>				
+			<%= render "layouts/aside"%>
+		</div>
 </div>
-<br/>
-<p><%= will_paginate @pins %></p>
