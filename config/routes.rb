@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  
+
   resources :pins
 
   devise_for :users
-  #get 'login/login'
   get 'sitio/inicio'
-  #get 'sitio/index'
   
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -12,10 +12,11 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root to: 'sitio#inicio'
-  # root 'welcome#index'
-
+  get 'users/:id' => 'users#show', as: :user
   get 'acerca' => 'sitio#acerca'
   get 'login' => 'login#login'
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

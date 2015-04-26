@@ -49,7 +49,7 @@ body{
   /*background: #171E29; 1F2D42 #0d0d0d*/
   /*background: #19181a;*/
   background: url("/assets/bkg/Free-Professional-Dark-Carbon-Patterns.jpg") repeat;
-  //overflow-x: hidden;
+  overflow-x: hidden;
   /*color: #232E3F;*/
   color: #fff;
   padding-top: 50px; 
@@ -128,9 +128,22 @@ aside{
 }
 
 
+.pagination > li > a, .pagination > li > span {
+  color: #697f58;
+  background-color: rgb(15, 16, 16);
+}
 
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+  z-index: 2;
+  color: white;
+  background-color: #697f58;
+  border-color: #337ab7;
+  cursor: default;
+}
 
-
+li .disabled{
+  background: yellow;
+}
 
 
 
