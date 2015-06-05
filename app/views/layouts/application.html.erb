@@ -158,11 +158,24 @@
 		</header>
 
 
-<% flash.each do |name, msg|%>
-	<%= content_tag(:div, msg, class: "alert alert-#(name)")%>
-<% end %>
+<!--% flash.each do |name, msg|%>
+	<!% = content_tag(: div, msg, c l a s s : " a l ert alert- # ( name ) " )%>
+<!% en d % -->
 <div class="container-fluid">
-	
+	<% if flash[:notice]%>
+			<div class="alert alert-info alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true" ><i class="fa fa-times"></i></button>
+				<%= flash[:notice]%>
+			</div>
+		<% end %>
+
+		<% if flash[:alert]%>
+			<div class="alert alert-danger alert-dismissable">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true" ><i class="fa fa-times"></i></button>
+				<%= flash[:alert]%>
+			</div>
+		<% end %>
+
 	<%= yield %>
 
 	
