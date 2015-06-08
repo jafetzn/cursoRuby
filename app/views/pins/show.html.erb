@@ -20,6 +20,7 @@
 	</div>
   
   <p>Fecha de creación:</p>
+  <%= "Hace " + time_ago_in_words(@pin.created_at) %><br/>
   <%= @pin.created_at %><br/>
   <code>Creado por 
   	<%= @pin.user.name %>

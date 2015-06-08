@@ -3,6 +3,8 @@
 	<h3 class="descripcion"><%= pin.description %></h3>
 	<%= link_to (image_tag pin.image(:medium)), pin, class: "img-responsive" %>
 	<p>Creado por: <strong><%= link_to pin.user.name, pin.user %></strong></p>
+	<p><small><%= time_ago_in_words(pin.created_at).capitalize %></small></p>
+
 	<p>
 		<% if current_user == pin.user %>
 			<%= link_to 'Editar', edit_pin_path(pin) %>
