@@ -1,0 +1,22 @@
+<% if flash[:notice]%>
+	<div class="alert alert-info alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true" ><i class="fa fa-times"></i>x</button>
+		<%= flash[:notice]%>
+	</div>
+<% end %>
+
+<% if flash[:alert]%>
+	<div class="alert alert-danger alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true" ><i class="fa fa-times"></i>x</button>
+		<%= flash[:alert]%>
+	</div>
+<% end %>
+
+<!-- esta madre no sirvio con ayuda del application_helper... revisar por qué....
+
+!% flash.each do | type, message| %>
+	<div class="alert <!%= flash_class type %> alert-dismissable">
+    	 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+    	 <!%= message %>
+	</div>
+<!% end %-->

@@ -65,7 +65,7 @@
 							</li>
 							<li><%= link_to "Acerca", acerca_path%></li>
 							<li><a href="#">Descargas</a></li>
-							<li><a href="#">Foro</a></li>
+							<li><%= link_to "Foro", foro_path%></li>
 						</ul>
 						
 						<form action="" class="navbar-form pull-left hidden-xs hidden-sm" role="search">
@@ -91,12 +91,12 @@
 									<ul class="dropdown-menu">
 										<li>
 											<%= link_to edit_user_registration_path do %>
-												<i class="fa fa-cog"></i> Edita cuenta
+												<i class="fa fa-cog"></i> Editar cuenta
 											<% end %> 
 										</li>
 										<li>
-											<%= link_to pins_path do %>
-												<i class="fa fa-diamond"></i> Recursos
+											<%= link_to home_path current_user do %>
+												<i class="fa fa-diamond"></i> Mis Posts
 											<% end %> 
 										</li>
 										<li class="divider"><a href="#"></a></li>
@@ -121,7 +121,7 @@
 						<% if user_signed_in? %>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
-											<i class="fa fa-user fa-fw"></i> <%= :name %>
+											<i class="fa fa-user fa-fw"></i> <%= current_user.name %>
 									</a>
 									<ul class="dropdown-menu">
 										<li>
@@ -131,7 +131,7 @@
 										</li>
 										<li>
 											<%= link_to pins_path do %>
-												<i class="fa fa-diamond"></i> Recursos
+												<i class="fa fa-diamond"></i> Mis Posts
 											<% end %> 
 										</li>
 										<li class="divider"><a href="#"></a></li>
