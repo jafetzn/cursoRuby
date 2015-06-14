@@ -85,5 +85,5 @@ Rails.application.configure do
   #  :access_key_id => ENV['AKIAI7C3QYH3CS4ZREQQ'],
   #  :secret_access_key => ENV['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']
   #}
-}
+  #}
 end
