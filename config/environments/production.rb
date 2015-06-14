@@ -76,13 +76,14 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = {:host => 'localhost:3000'}
+  
   #Almacenamiento de imagenes con amazon s3
-  config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-    :bucket => ENV['rubinmz'],
-    :access_key_id => ENV['AKIAI7C3QYH3CS4ZREQQ'],
-    :secret_access_key => ENV['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']
-  }
+  #config.paperclip_defaults = {
+  #:storage => :s3,
+  #:s3_credentials => {
+  #  :bucket => ENV['rubinmz'],
+  #  :access_key_id => ENV['AKIAI7C3QYH3CS4ZREQQ'],
+  #  :secret_access_key => ENV['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']
+  #}
 }
 end
