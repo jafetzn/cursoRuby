@@ -15,6 +15,7 @@ gem 'paperclip', '~> 3.0'
 gem 'faker'
 gem 'will_paginate', '~> 3.0'
 gem 'bootstrap-will_paginate'
+gem 'aws-sdk'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do

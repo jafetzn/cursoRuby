@@ -18,5 +18,4 @@ class UsersController < ApplicationController
   	@user = User.find(params[:id])
   	return current_user.id
   end
-
 end

@@ -59,7 +59,9 @@ section article{
   color: #98BEDC;
 }
 aside{
- background: #141115; 
+   background-color: #0a090a;
+  background-image: -webkit-linear-gradient(top, #0a090a, #0E0D10); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image:         linear-gradient(to bottom, #0a090a, #0E0D10); /* Chrome 26, Firefox 16+, IE 10+, Opera */
 }
 
 .divcol .content{
@@ -105,6 +107,7 @@ aside{
 
   footer{
     margin-top: 80px;
+    
   }
 
 
@@ -316,26 +319,44 @@ footer .social-footer li{
   .blk-footer{
     font-size: .7em;
   }
-  #myCarousel .carousel-inner{
-    font-size: .2em;
+  #myCarousel .carousel-inner p{
+    font-size: 1em;
+  }
+  #myCarousel .carousel-inner h1{
+    font-size: 2em;
+  }
+  .carousel-caption .btn {
+    
+    height: 30px;
+    font-size: 1em;
   }
 }
  
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
-  
+@media (min-width: 641px) and (max-width: 767px) { 
+  #myCarousel .carousel-inner p{
+    font-size: .8em;
+  }
+  #myCarousel .carousel-inner h1{
+    font-size: 2em;
+  }
+  .carousel-caption .btn {
+    height: 25px;
+    font-size: .7em;
+  }
 }
 
 
-@media (max-width: 480px) { 
-  #myCarousel{
-    margin-top: 30px;
+@media (min-width: 480px) and (max-width: 640px) { 
+   #myCarousel .carousel-inner p{
+    font-size: 1em;
   }
-  #myCarousel p{
-    font-size: 1px;
+  #myCarousel .carousel-inner h1{
+    font-size: 1.5em;
   }
-  #myCarousel h1 span{
-    font-size: 100px;
+  .carousel-caption .btn {
+    height: 25px;
+    font-size: 2em;
   }
   
   
